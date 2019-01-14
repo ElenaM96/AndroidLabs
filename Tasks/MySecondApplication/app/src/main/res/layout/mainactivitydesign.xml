@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_layout">
+
+    <Button
+        android:id="@+id/send_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_request"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:background="@drawable/button"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <edu.ktu.mysecondapplication.IndicatingView
+                android:id="@+id/generated_graphic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:background="#888888">
+            </edu.ktu.mysecondapplication.IndicatingView>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:indeterminate="false" />
+        </TableRow>
+    </TableLayout>
+    <edu.ktu.mysecondapplication.ProgressIndicator
+        android:id="@+id/progress_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="#888888">
+    </edu.ktu.mysecondapplication.ProgressIndicator>
+
+    <TextView
+        android:id="@+id/circle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:shadowRadius="10.0"
+        android:text="4"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>

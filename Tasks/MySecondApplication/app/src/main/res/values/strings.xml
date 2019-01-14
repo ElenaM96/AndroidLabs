@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MySecondApplication</string>
+    <string name="send_request">Send Request</string>
+</resources>
